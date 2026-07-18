@@ -1,17 +1,10 @@
 # YT2CD
 
-YT2CD is a script for Arch Linux that simplifies the process of downloading audio from YouTube, converting the audio into the propper format and including metadata, and burning to CDs.
+YT2CD is a script I made for Arch Linux that simplifies the process of downloading audio from YouTube, converting the audio into the propper format and including metadata, and burning to CDs. I hated typing song names into k3b manually.
 
-## Features
-
-- Download audio from YouTube videos in 16-bit 44.1khz WAVE format
-- Tag audio files with metadata (e.g., title, artist, album).
-- Generate a .cue file compatible with cdrado for seamless CD burning.
-- Supports playlists and single videos.
+If you just want to download a youtube playlist with metadata you can download cddownload.sh and cancel the script when it asks for your cd drive location.
 
 ## Prerequisites
-
-Before using YT2CD, ensure the following are installed on your system:
 
 - yt-dlp(https://github.com/yt-dlp/yt-dlp)
 - ffprobe (part of ffmpeg, https://www.ffmpeg.org/)
@@ -37,13 +30,6 @@ or just download the files from the code section.
    chmod +x generatecue.sh
    ./cddownload.sh
    ```
-
-
-## How It Works
-
-1. **Download Audio**: Extracts the audio from the provided YouTube URLs using yt-dlp.
-2. **Tag Files**: Uses ffprobe to read metadata downloaded by yt-dlp and generates a .cue file (the user can edit this before burning).
-3. **Burn CD**: uses cdrdao to burn audio onto cd in the same order as the YouTube playlist, with artist name and song title.
 
 ## License
 
