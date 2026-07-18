@@ -35,11 +35,6 @@ or just download the files from the code section.
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- yt-dlp(https://github.com/yt-dlp/yt-dlp)
-- ffprobe (part of ffmpeg, https://www.ffmpeg.org/)
-- cdrdao (https://github.com/cdrdao/cdrdao)
 
 ## Support
 
